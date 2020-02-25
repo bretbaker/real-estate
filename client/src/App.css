@@ -1,4 +1,4 @@
-/* CSS RESET */
+/* CSS RESET LINES 3 - 126 */
 /* MAIN CSS STARTS LINE 128 */
 html,
 body,
@@ -126,3 +126,87 @@ table {
 }
 
 /* MAIN CSS */
+body,
+input {
+  font-family: 'Raleway', sans-serif;
+}
+
+.head-nav-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-bottom: solid 1px lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-top: solid 1px lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.login-form-parent-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form-child-container {
+  width: 70%;
+  text-align: center;
+}
+
+.sign-in-header-1,
+.sign-up-header-1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.sign-in-header-2,
+.sign-up-header-2 {
+  margin-bottom: 1rem;
+}
+
+.form-input-text {
+  width: 98%;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-left: 0.25rem;
+}
+
+.login-btn,
+.register-btn {
+  width: 100%;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.sign-up-link,
+.sign-in-link {
+  text-decoration: none;
+  color: blue;
+}
+
+.foot-nav-btn {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  line-height: 1.5rem;
+}
+
+.blue {
+  color: blue;
+}

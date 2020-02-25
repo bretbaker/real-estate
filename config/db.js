@@ -10,7 +10,7 @@ const connectDB = async () => {
       useCreateIndex: true,
       useFindAndModify: false
     });
-    console.log(`Database connected @ URI: ${db}`);
+    console.log(`Database connected => ${db}`);
   } catch (err) {
     console.error(err.message);
     // Exit process with failure

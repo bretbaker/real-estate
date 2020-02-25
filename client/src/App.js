@@ -1,7 +1,11 @@
 // react
 import React, { Fragment, useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// pages
 import Login from './pages/Login';
+import Register from './pages/Register';
+import YourHome from './pages/YourHome';
+
 // redux
 // import { Provider } from 'react-redux';
 // import store from './store';
@@ -29,8 +33,22 @@ function App() {
         <Switch>
           <Route
             exact
-            path='/'
+            path='/login'
             render={props => <Login {...props} page={page} setPage={setPage} />}
+          />
+          <Route
+            exact
+            path='/register'
+            render={props => (
+              <Register {...props} page={page} setPage={setPage} />
+            )}
+          />
+          <Route
+            exact
+            path='/your-home'
+            render={props => (
+              <YourHome {...props} page={page} setPage={setPage} />
+            )}
           />
         </Switch>
       </Fragment>
