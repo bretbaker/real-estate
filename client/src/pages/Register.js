@@ -30,24 +30,6 @@ const Register = ({ page, setPage }) => {
   //     setAlert('Passwords do not match', 'danger');
   //   } else {
   //     register({ name, email, password });
-  //     // BELOW IS A FORM SUBMISSION WITH NO REDUX
-  //     // const newUser = {
-  //     //   name,
-  //     //   email,
-  //     //   password
-  //     // };
-  //     // try {
-  //     //   const config = {
-  //     //     headers: {
-  //     //       'Content-Type': 'application/json'
-  //     //     }
-  //     //   };
-  //     //   const body = JSON.stringify(newUser);
-  //     //   const res = await axios.post('/api/users', body, config);
-  //     //   console.log(res.data);
-  //     // } catch (err) {
-  //     //   console.error(err.response.data);
-  //     // }
   //   }
   // };
 
@@ -58,8 +40,8 @@ const Register = ({ page, setPage }) => {
   return (
     <Fragment>
       <HeadNav1 page={page} />
-      <div className='login-form-parent-container'>
-        <div className='login-form-child-container'>
+      <div className='page-container'>
+        <div className='auth-form-container'>
           <h1 className='sign-up-header-1'>Sign Up</h1>
           <p className='sign-up-header-2'>
             <i className='fas fa-user'></i> Create Your Account
@@ -107,7 +89,7 @@ const Register = ({ page, setPage }) => {
           </form>
           <p className='my-1'>
             Already have an account?{' '}
-            <Link to='/login' className='sign-in-link'>
+            <Link to='/' className='sign-in-link'>
               Sign In
             </Link>
           </p>

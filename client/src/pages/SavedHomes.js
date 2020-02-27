@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 import HeadNav1 from '../components/HeadNav1';
 import FootNav from '../components/FootNav';
 
-const YourHome = ({ page, setPage }) => {
+const SavedHomes = ({ page, setPage }) => {
   useEffect(() => {
-    if (page !== 'your-home') setPage('your-home');
+    if (page !== 'saved-homes') setPage('saved-homes');
     // console.log(page);
   }, [page, setPage]);
 
@@ -19,9 +19,9 @@ const YourHome = ({ page, setPage }) => {
   );
 };
 
-YourHome.propTypes = {
+SavedHomes.propTypes = {
   page: PropTypes.string,
   setPage: PropTypes.func.isRequired
 };
 
-export default YourHome;
+export default SavedHomes;

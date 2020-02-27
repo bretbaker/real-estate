@@ -135,20 +135,43 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   background-color: rgba(211, 211, 211, 0.5);
   border-bottom: solid 1px lightgray;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
+}
+
+.head-nav-1-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.head-nav-2 {
+  position: fixed;
+  top: 8vh;
+  left: 0;
+  height: 6vh;
+  width: 100vw;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-bottom: solid 1px lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.head-nav-2-btn {
+  padding: 0.25rem 1.25rem;
+  /* font-size: 0.75rem; */
 }
 
 .foot-nav {
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 10vh;
+  height: 8vh;
   width: 100vw;
   background-color: rgba(211, 211, 211, 0.5);
   border-top: solid 1px lightgray;
@@ -157,14 +180,14 @@ input {
   justify-content: space-evenly;
 }
 
-.login-form-parent-container {
+.page-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
-.login-form-child-container {
+.auth-form-container {
   width: 70%;
   text-align: center;
 }
@@ -187,6 +210,24 @@ input {
   padding-left: 0.25rem;
 }
 
+.search-input-text {
+  width: 70%;
+  font-size: 1.25rem;
+  padding-left: 0.25rem;
+}
+
+.map-list-toggle {
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.location-arrow {
+  color: blue;
+  font-size: 1.5rem;
+}
+
 .login-btn,
 .register-btn {
   width: 100%;
@@ -205,6 +246,11 @@ input {
   text-decoration: none;
   color: black;
   line-height: 1.5rem;
+  font-weight: bold;
+}
+
+.foot-nav-btn-text {
+  font-size: 0.9rem;
 }
 
 .blue {

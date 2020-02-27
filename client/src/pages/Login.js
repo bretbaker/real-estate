@@ -35,8 +35,8 @@ const Login = ({ page, setPage }) => {
   return (
     <Fragment>
       <HeadNav1 page={page} />
-      <div className='login-form-parent-container'>
-        <div className='login-form-child-container'>
+      <div className='page-container'>
+        <div className='auth-form-container'>
           <h1 className='sign-in-header-1'>Sign In</h1>
           <p className='sign-in-header-2'>
             <i className='fas fa-user'></i> Sign Into Your Account

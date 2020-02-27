@@ -3,25 +3,27 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 // components
 import HeadNav1 from '../components/HeadNav1';
+import HeadNav2 from '../components/HeadNav2';
 import FootNav from '../components/FootNav';
 
-const YourHome = ({ page, setPage }) => {
+const SearchList = ({ page, setPage }) => {
   useEffect(() => {
-    if (page !== 'your-home') setPage('your-home');
+    if (page !== 'search-list') setPage('search-list');
     // console.log(page);
   }, [page, setPage]);
 
   return (
     <Fragment>
       <HeadNav1 page={page} />
+      <HeadNav2 />
       <FootNav page={page} />
     </Fragment>
   );
 };
 
-YourHome.propTypes = {
+SearchList.propTypes = {
   page: PropTypes.string,
   setPage: PropTypes.func.isRequired
 };
 
-export default YourHome;
+export default SearchList;

@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import YourHome from './pages/YourHome';
+import SavedHomes from './pages/SavedHomes';
+import Updates from './pages/Updates';
+import SearchMap from './pages/SearchMap';
+import SearchList from './pages/SearchList';
 
 // redux
 // import { Provider } from 'react-redux';
@@ -33,7 +37,7 @@ function App() {
         <Switch>
           <Route
             exact
-            path='/login'
+            path='/'
             render={props => <Login {...props} page={page} setPage={setPage} />}
           />
           <Route
@@ -48,6 +52,34 @@ function App() {
             path='/your-home'
             render={props => (
               <YourHome {...props} page={page} setPage={setPage} />
+            )}
+          />
+          <Route
+            exact
+            path='/saved-homes'
+            render={props => (
+              <SavedHomes {...props} page={page} setPage={setPage} />
+            )}
+          />
+          <Route
+            exact
+            path='/updates'
+            render={props => (
+              <Updates {...props} page={page} setPage={setPage} />
+            )}
+          />
+          <Route
+            exact
+            path='/search-map'
+            render={props => (
+              <SearchMap {...props} page={page} setPage={setPage} />
+            )}
+          />
+          <Route
+            exact
+            path='/search-list'
+            render={props => (
+              <SearchList {...props} page={page} setPage={setPage} />
             )}
           />
         </Switch>
