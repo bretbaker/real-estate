@@ -8,7 +8,6 @@ import FootNav from '../components/FootNav';
 const Login = ({ page, setPage }) => {
   useEffect(() => {
     if (page !== 'login') setPage('login');
-    // console.log(page);
   }, [page, setPage]);
 
   const [formData, setFormData] = useState({
@@ -63,7 +62,7 @@ const Login = ({ page, setPage }) => {
             />
             <input type='submit' className='login-btn' value='Login' />
           </form>
-          <p className='my-1'>
+          <p>
             Don't have an account?{' '}
             <Link to='/register' className='sign-up-link'>
               Sign Up

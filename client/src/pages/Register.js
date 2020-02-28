@@ -8,7 +8,6 @@ import FootNav from '../components/FootNav';
 const Register = ({ page, setPage }) => {
   useEffect(() => {
     if (page !== 'register') setPage('register');
-    // console.log(page);
   }, [page, setPage]);
 
   const [formData, setFormData] = useState({
@@ -54,7 +53,7 @@ const Register = ({ page, setPage }) => {
               name='name'
               value={name}
               onChange={e => onChange(e)}
-              // required
+              required
             />
             <input
               className='form-input-text'
@@ -63,7 +62,7 @@ const Register = ({ page, setPage }) => {
               name='email'
               value={email}
               onChange={e => onChange(e)}
-              // required
+              required
             />
             <input
               className='form-input-text'
@@ -73,7 +72,7 @@ const Register = ({ page, setPage }) => {
               value={password}
               minLength='6'
               onChange={e => onChange(e)}
-              // required
+              required
             />
             <input
               className='form-input-text'
@@ -83,11 +82,11 @@ const Register = ({ page, setPage }) => {
               minLength='6'
               value={password2}
               onChange={e => onChange(e)}
-              // required
+              required
             />
             <input type='submit' className='register-btn' value='Register' />
           </form>
-          <p className='my-1'>
+          <p>
             Already have an account?{' '}
             <Link to='/' className='sign-in-link'>
               Sign In

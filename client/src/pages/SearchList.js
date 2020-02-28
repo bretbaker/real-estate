@@ -9,7 +9,6 @@ import FootNav from '../components/FootNav';
 const SearchList = ({ page, setPage }) => {
   useEffect(() => {
     if (page !== 'search-list') setPage('search-list');
-    // console.log(page);
   }, [page, setPage]);
 
   return (

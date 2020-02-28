@@ -2,9 +2,9 @@ import React, { useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 const HeadNav1 = ({ page }) => {
-  useEffect(() => {
-    console.log(page);
-  }, [page]);
+  // useEffect(() => {
+  //   console.log(page);
+  // }, [page]);
 
   return (
     <Fragment>

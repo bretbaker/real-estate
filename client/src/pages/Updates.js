@@ -8,12 +8,32 @@ import FootNav from '../components/FootNav';
 const Updates = ({ page, setPage }) => {
   useEffect(() => {
     if (page !== 'updates') setPage('updates');
-    // console.log(page);
   }, [page, setPage]);
 
   return (
     <Fragment>
       <HeadNav1 page={page} />
+      <div className='unauth-updates-bg'></div>
+      <div className='unauth-ol'>
+        <div className='unauth-head-space'></div>
+        <div className='unauth-body'>
+          <i className='fas fa-edit fa-3x'></i>
+          <h1 className='unauth-header'>Save your search</h1>
+          <p className='unauth-desc'>
+            Sign up to save searches and get updates on new
+            <br />
+            listings and price cuts.
+          </p>
+          <button className='unauth-btn'>Create an account</button>
+        </div>
+        <div className='unauth-foot'>
+          <p>
+            <Link to='/' className='unauth-login-link'>
+              Already saved a search? Sign in now.
+            </Link>
+          </p>
+        </div>
+      </div>
       <FootNav page={page} />
     </Fragment>
   );
