@@ -10,7 +10,7 @@ const FootNav = ({ page }) => {
     <Fragment>
       {(page === 'login' || page === 'register') && (
         <nav className='foot-nav'>
-          <Link to='/search-map' className='foot-nav-btn'>
+          <Link to='/search-list' className='foot-nav-btn'>
             <i className='fas fa-search fa-lg'></i>
             <p className='foot-nav-btn-text'>Search</p>
           </Link>
@@ -34,7 +34,7 @@ const FootNav = ({ page }) => {
       )}
       {page === 'your-home' && (
         <nav className='foot-nav'>
-          <Link to='/search-map' className='foot-nav-btn'>
+          <Link to='/search-list' className='foot-nav-btn'>
             <i className='fas fa-search fa-lg'></i>
             <p className='foot-nav-btn-text'>Search</p>
           </Link>
@@ -58,7 +58,7 @@ const FootNav = ({ page }) => {
       )}
       {page === 'saved-homes' && (
         <nav className='foot-nav'>
-          <Link to='/search-map' className='foot-nav-btn'>
+          <Link to='/search-list' className='foot-nav-btn'>
             <i className='fas fa-search fa-lg'></i>
             <p className='foot-nav-btn-text'>Search</p>
           </Link>
@@ -82,7 +82,7 @@ const FootNav = ({ page }) => {
       )}
       {page === 'updates' && (
         <nav className='foot-nav'>
-          <Link to='/search-map' className='foot-nav-btn'>
+          <Link to='/search-list' className='foot-nav-btn'>
             <i className='fas fa-search fa-lg'></i>
             <p className='foot-nav-btn-text'>Search</p>
           </Link>
@@ -104,9 +104,9 @@ const FootNav = ({ page }) => {
           </Link>
         </nav>
       )}
-      {(page === 'search-map' || page === 'search-list') && (
+      {(page === 'search-list' || page === 'search-map') && (
         <nav className='foot-nav'>
-          <Link to='/search-map' className='foot-nav-btn blue'>
+          <Link to='/search-list' className='foot-nav-btn blue'>
             <i className='fas fa-search fa-lg'></i>
             <p className='foot-nav-btn-text'>Search</p>
           </Link>
