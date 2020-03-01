@@ -1,11 +1,7 @@
-import React, { useEffect, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 const HeadNav1 = ({ page }) => {
-  // useEffect(() => {
-  //   console.log(page);
-  // }, [page]);
-
   return (
     <Fragment>
       {(page === 'login' || page === 'register') && (

@@ -129,6 +129,7 @@ table {
 body,
 input {
   font-family: 'Raleway', sans-serif;
+  color: #404040;
 }
 
 .head-nav-1 {
@@ -161,11 +162,23 @@ input {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 2;
 }
 
 .head-nav-2-btn {
   padding: 0.25rem 1.25rem;
-  /* font-size: 0.75rem; */
+  border: dodgerblue solid 1px;
+  border-radius: 0.25rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: dodgerblue;
+}
+
+.google-map {
+  position: fixed;
+  top: 14vh;
+  left: 0;
+  height: 78vh;
+  width: 100%;
 }
 
 .foot-nav {
@@ -220,13 +233,13 @@ input {
 
 .map-list-toggle {
   font-weight: bold;
-  color: blue;
+  color: dodgerblue;
   text-decoration: none;
   font-size: 1.25rem;
 }
 
 .location-arrow {
-  color: blue;
+  color: dodgerblue;
   font-size: 1.5rem;
 }
 
@@ -235,18 +248,23 @@ input {
   width: 100%;
   margin-bottom: 3rem;
   font-size: 1.5rem;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0;
 }
 
 .sign-up-link,
 .sign-in-link {
   text-decoration: none;
-  color: blue;
+  color: dodgerblue;
 }
 
 .foot-nav-btn {
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: #404040;
   line-height: 1.5rem;
   font-weight: bold;
 }
@@ -256,7 +274,7 @@ input {
 }
 
 .blue {
-  color: blue;
+  color: dodgerblue;
 }
 
 .unauth-your-home-bg {
@@ -294,7 +312,7 @@ input {
   top: 8vh;
   height: 84vh;
   width: 100%;
-  background-color: rgba(0, 0, 255, 0.8);
+  background-color: rgba(30, 144, 255, 0.8);
   z-index: 2;
 }
 
